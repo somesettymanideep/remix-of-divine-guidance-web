@@ -6,7 +6,7 @@ import { StarField } from "@/components/StarField";
 import { ConsultationForm } from "@/components/ConsultationForm";
 import { SITE, SERVICES, TESTIMONIALS } from "@/lib/site";
 import aboutImg from "@/assets/about-astrologer.jpg";
-import jupiterAsset from "@/assets/jupiter.webp.asset.json";
+import jupiterSpiritual from "@/assets/jupiter-spiritual.png";
 import ctaBg from "@/assets/cta-cosmic-bg.jpg";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
@@ -119,11 +119,11 @@ function About() {
         </div>
         <div className="space-y-6 relative">
           <img
-            src={jupiterAsset.url}
+            src={jupiterSpiritual}
             alt=""
             aria-hidden="true"
             loading="lazy"
-            className="pointer-events-none absolute -top-6 -right-6 w-[120px] h-[120px] select-none z-20 drop-shadow-lg"
+            className="pointer-events-none absolute -top-4 -right-4 w-[100px] h-[100px] select-none z-20 drop-shadow-lg"
             style={{ transform: `rotate(${scrollY * 0.4}deg)` }}
           />
           <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">About Us</span>
