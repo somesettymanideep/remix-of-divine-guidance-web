@@ -125,7 +125,15 @@ function About() {
             <div className="text-xs uppercase tracking-wider text-muted-foreground">Years of Spiritual Practice</div>
           </div>
         </div>
-        <div className="space-y-6">
+        <div className="space-y-6 relative">
+          <img
+            src={jupiterAsset.url}
+            alt=""
+            aria-hidden="true"
+            loading="lazy"
+            className="pointer-events-none absolute -top-6 -right-6 w-[120px] h-[120px] select-none z-20 drop-shadow-lg"
+            style={{ transform: `rotate(${scrollY * 0.4}deg)` }}
+          />
           <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">About Us</span>
           <h2 className="font-display text-3xl md:text-5xl font-bold leading-tight">
             About <span className="text-gradient-primary">Sri Durga Matha</span> Astrology
